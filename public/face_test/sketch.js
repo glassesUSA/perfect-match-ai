@@ -316,6 +316,7 @@ let sketch = function (p) {
       ////////////////////////////////////////////////////////////////////////
       //REDIRECT USER TO THE RIGHT CATEGORY after X seconds
       if (old_time + 5000 < p.millis()) {
+        window.parent.postMessage(url)
         // window.location = url;
       }
 
