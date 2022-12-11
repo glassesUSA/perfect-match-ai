@@ -1,150 +1,135 @@
-body {
+body{
   background-color: #000;
-  margin: 0;
-  box-sizing: border-box;
-  position: relative;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-#canvas {
-  box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  padding-left: 220px;
-}
-
-#video {
-  padding-left: 220px;
-  box-sizing: border-box;
-  position: absolute;
-  z-index: 0;
-}
-
-#edit_button {
+#canvas{
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 200px;
-  border-color: #fff;
-  z-index: 1000;
-  font-size: 14pt;
-  color: #fff;
+  z-index:1;
+  border: 8px #884898 solid;
+	border-radius: 20px;
 }
 
-.valueDisplay:first-of-type {
-  padding-top: 100px;
+#video{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index:0;
+  border: 8px #884898 solid;
+	border-radius: 20px;
 }
 
-.valueDisplay {
-  /* position: absolute; */
-  /*Or 665px*/
-  padding-left: 10px;
-
-  color: #f7bd8f;
-  display: block;
+.valueDisplay{
   position: relative;
-  z-index: 10;
-  margin-left: auto;
+  margin-left: 1310px; /*Or 665px*/
+  color: #f7bd8f;
+
   font-size: 10pt;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-weight:100;
 }
 
-.Slider {
-  margin-left: 10px;
-
+.Slider{
   -webkit-appearance: none;
   position: relative;
-  z-index: 10;
   margin-top: 5px;
-  /*Or 665px*/
+  margin-left: 1310px;/*Or 665px*/
   margin-bottom: 10px;
 
   background: none;
-  height: 12px;
-  width: 200px;
+  height:12px;
+  width:200px;
   border-radius: 6px;
   border: 1px solid #f7bd8f;
 }
 
 .Slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 9px;
-  height: 9px;
+  width:9px;
+  height:9px;
   border-radius: 5px;
   background: #bf794e;
   outline: none;
 }
 
 
-.imageButtons {
+.imageButtons{
   position: relative;
-  margin-top: 10px;
+  margin-top:10px;
 
-  width: 30px;
-  height: 30px;
+  width:30px;
+  height:30px;
   border: none;
 
   cursor: pointer;
 }
 
-#screenshot_button {
-  /*Or 675px*/
+#screenshot_button{
+  margin-left: 1320px;/*Or 675px*/
   background: url('/images/screenshot.png');
 }
 
-#save_drawing_button {
+#save_drawing_button{
   margin-left: 20px;
   background: url('/images/savejson.png');
 }
 
-#index_UP_button {
+#index_UP_button{
   margin-left: 20px;
   background: url('/images/shapeindex_up.png');
 }
 
-#index_DOWN_button {
+#index_DOWN_button{
   margin-left: 20px;
   background: url('/images/shapeindex_down.png');
 }
 
-.Buttons {
+.Buttons{
   position: relative;
   -webkit-appearance: none;
   margin-top: 10px;
 
-  height: 36px;
+  height:36px;
   border: 2px solid #fff;
   border-radius: 18px;
 
   background: none;
   font-size: 10pt;
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-weight:100;
+
   cursor: pointer;
 }
 
-#complete_button {
-  /*Or 665px*/
-  border-color: #89c3eb;
-  color: #89c3eb;
-  width: 80px;
+#edit_button{
+  margin-top: 5px;
+  margin-left: 1310px;/*Or 665px*/
+  margin-bottom: 15px;
+
+  width:200px;
+  border-color: #fff;
+  font-size: 14pt;
+  color: #fff;
 }
 
-#undo_button {
+#complete_button{
+  margin-left: 1310px;/*Or 665px*/
+  border-color: #89c3eb;
+  color: #89c3eb;
+  width:80px;
+}
+
+#undo_button{
   margin-left: 5px;
   border-color: #fff;
   color: #fff;
-  width: 50px;
+  width:50px;
 }
 
-#delete_button {
+#delete_button{
   margin-left: 5px;
   border-color: #ee827c;
   color: #ee827c;
-  width: 60px;
+  width:60px;
 }
